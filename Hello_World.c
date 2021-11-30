@@ -3,19 +3,26 @@
 
 int main()
 {
-  
-  int num1 ;
-  int num2 ;
-  printf("enter number1 : \n");
-  scanf("lf",num1);
-  printf("enter number2 : \n");
-  scanf("lf", num2);
-  printf("answer: %f",num1+num2 );
+  double num1;
+  double num2;
+  char op;
+
+  printf("enter number 1:");
+  scanf("%lf", &num1);
+  printf("enter operator:");
+  scanf(" %c", &op);
+  printf("enter number 2:");
+  scanf("%lf", &num2);
+
+  if(op == '+')
+  {printf("%f",num1 +num2);}
+  else if(op == '-')
+  {printf("%f",num1-num2);}
+  else if(op == '*')
+  {printf("%f",num1*num2);}
+    else if(op == '/')
+  {printf("%f",num1/num2);}
 
 
-
-
-  return 0; 
-  
-  
 }
+
