@@ -1,28 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct Phone
+{
+  /* data */
+  int Display;
+  int Ram ;
+  int Memory;
+};
+
+
+
 int main()
 {
-  double num1;
-  double num2;
-  char op;
+  struct Phone IPHONE;
+  IPHONE.Display =5.5;
+  IPHONE.Ram = 4;
+  IPHONE.Memory=64;
 
-  printf("enter number 1:");
-  scanf("%lf", &num1);
-  printf("enter operator:");
-  scanf(" %c", &op);
-  printf("enter number 2:");
-  scanf("%lf", &num2);
 
-  if(op == '+')
-  {printf("%f",num1 +num2);}
-  else if(op == '-')
-  {printf("%f",num1-num2);}
-  else if(op == '*')
-  {printf("%f",num1*num2);}
-    else if(op == '/')
-  {printf("%f",num1/num2);}
-
+  printf("%d",IPHONE.Ram); 
+  return 0; 
 
 }
 
